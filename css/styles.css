@@ -19,8 +19,8 @@ html {
 	--button-passive-color: #f5f4fa;
 
 	/* Others */
-	--indent:30px;
-	--items:3;
+	--indent: 30px;
+	--items: 3;
 }
 
 /*________________________ Глобальні стилі __________________*/
@@ -166,7 +166,7 @@ img {
 }
 
 /* -------------- Hero --------------*/
-.section.hero{
+.section.hero {
 	padding: 200px 0;
 
 	max-width: 1600px;
@@ -175,7 +175,7 @@ img {
 	margin-left: auto;
 	background-position: cover;
 	background-color: #C4C4C4;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/homepage/hero/hero.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero/hero.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -229,7 +229,11 @@ img {
 
 /* -----------------------------main----------------------------- */
 
-.advences.section{
+
+
+/* -------------- advences ------------- */
+
+.advences.section {
 	padding-bottom: 0;
 }
 
@@ -247,11 +251,41 @@ img {
 	gap: 30px;
 }
 
+.advences-list>li::before {
+	content: "";
+	display: block;
+	height: 120px;
+	background: #F5F4FA;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+.advences-list-item.antenna::before {
+	background-image: url("../images/homepage/advences/antenna.svg");
+}
+
+.advences-list-item.clock::before {
+	background-image: url("../images/homepage/advences/clock.svg");
+}
+
+.advences-list-item.diagram::before {
+	background-image: url("../images/homepage/advences/diagram.svg");
+}
+
+.advences-list-item.astronaut::before {
+	background-image: url("../images/homepage/advences/astronaut.svg");
+}
+
 .advences-list-item-p {
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
 	width: 270px;
 }
+
+/* ---------------- our team -------------- */
 
 .our-team {
 	background-color: var(--button-passive-color);
@@ -289,7 +323,7 @@ img {
 	border-radius: 0px 0px 4px 4px;
 }
 
-.member-container{
+.member-container {
 	padding: 30px 0;
 }
 
@@ -310,11 +344,38 @@ img {
 	letter-spacing: 0.03em;
 }
 
+/* --------------------CLIENTS---------------- */
+
+.clients-subtitle {
+	font-size: 36px;
+	line-height: 42px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--font-submain-color);
+	margin-bottom: 50px;
+}
+
+
+.clients-list{
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+}
+
+.clients-item{
+	width: 170px;
+	height: 92px;
+	
+	background-color: inherit;
+	border: 1px solid rgba(175, 177, 184, 1);
+	border-radius: 4px;
+}
+
 /* ________________Футер______________ */
 
 .footer {
 	background-color: var(--footer-color);
-		padding: 60px 0;
+	padding: 60px 0;
 }
 
 .footer a {
@@ -351,11 +412,11 @@ img {
 /* portfolio */
 
 
-.main.main-portfolio{
+.main.main-portfolio {
 	background-color: F5F5F5;
 }
 
-.filter-list.list{
+.filter-list.list {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
@@ -389,21 +450,25 @@ button {
 	border-radius: 4%;
 }
 
-.examples-list.list{
+.examples-list.list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	
+
 }
 
-.examples-list-item{
+.examples-list-item {
 	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 }
 
+.examples-list-item:hover {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 
-.item-container{
-	padding:20px 24px ;
+
+.item-container {
+	padding: 20px 24px;
 	border: 1px solid #EEEEEE;
 	border-top: none;
 }
