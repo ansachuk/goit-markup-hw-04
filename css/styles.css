@@ -251,34 +251,6 @@ img {
 	gap: 30px;
 }
 
-.advences-list>li::before {
-	content: "";
-	display: block;
-	height: 120px;
-	background: #F5F4FA;
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-radius: 4px;
-	margin-bottom: 30px;
-}
-
-.advences-list-item.antenna::before {
-	background-image: url("../images/homepage/advences/antenna.svg");
-}
-
-.advences-list-item.clock::before {
-	background-image: url("../images/homepage/advences/clock.svg");
-}
-
-.advences-list-item.diagram::before {
-	background-image: url("../images/homepage/advences/diagram.svg");
-}
-
-.advences-list-item.astronaut::before {
-	background-image: url("../images/homepage/advences/astronaut.svg");
-}
-
 .advences-list-item-p {
 	line-height: calc(24 / 14);
 	letter-spacing: 0.03em;
@@ -447,6 +419,7 @@ button {
 .item-button:focus {
 	color: var(--header-color);
 	background-color: var(--action-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4%;
 }
 
