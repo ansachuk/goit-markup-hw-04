@@ -165,21 +165,22 @@ img {
 	color: var(--action-color);
 }
 
-.contact-link{
+.contact-link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-		fill: var(--font-main-color)
+
 }
 
-.contact-icon{
+.contact-icon {
 	margin-right: 10px;
 	fill: currentColor;
 
 }
 
-.contact-icon:hover {
-	fill: #fff;
+.contact-icon:hover,
+.contact-icon:focus {
+	fill: var(--action-color);
 }
 
 /* -------------- Hero --------------*/
@@ -274,6 +275,18 @@ img {
 	width: 270px;
 }
 
+.advences-item{
+	width: 270px;
+	height: 120px;
+	background: #F5F4FA;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+
+.advences-item-icon{
+	margin: 25px 100px;
+}
+
 /* ---------------- our team -------------- */
 
 .our-team {
@@ -345,16 +358,16 @@ img {
 }
 
 
-.clients-list{
+.clients-list {
 	display: flex;
 	flex-direction: row;
 	gap: 30px;
 }
 
-.clients-item{
+.clients-item {
 	width: 170px;
 	height: 92px;
-	
+
 	background-color: inherit;
 	border: 1px solid rgba(175, 177, 184, 1);
 	border-radius: 4px;
