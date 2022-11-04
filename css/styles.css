@@ -344,6 +344,35 @@ img {
 	line-height: calc(19 / 16);
 	text-align: center;
 	letter-spacing: 0.03em;
+
+	margin-bottom: 16px;
+}
+
+.social-list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.team-link {
+	display: inline-block;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+
+}
+
+.team-link:hover {
+	background-color: var(--action-color);
+}
+
+.team-icon {
+	fill: currentColor;
+	margin: 12px;
+}
+
+.team-link:hover .team-icon {
+	fill: var(--header-color);
 }
 
 /* --------------------CLIENTS---------------- */
@@ -381,15 +410,22 @@ img {
 	margin: 16px 32px;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
 	background-color: inherit;
 	border: 1px solid var(--action-color);
 	border-radius: 4px;
-	
+
 }
 
-.clients-link:hover .clients-icon{
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
 	fill: var(--action-color);
+}
+
+.footer-icons{
+	margin: 12px;
+	fill: var(--header-color);
 }
 
 /* ________________Футер______________ */
@@ -397,6 +433,11 @@ img {
 .footer {
 	background-color: var(--footer-color);
 	padding: 60px 0;
+}
+
+.footer>.container{
+	display: flex;
+	gap: 70px;
 }
 
 .footer a {
@@ -429,6 +470,42 @@ img {
 .adress-connect.link:focus {
 	color: var(--action-color);
 }
+
+/* ------------------ FOOTER-CONECT -------------- */
+
+.footer-title{
+	font-weight: 700;
+		font-size: 14px;
+		line-height: calc(16/14);
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	
+		color: #FFFFFF;
+
+		margin-bottom: 20px;
+}
+
+.footer-list{
+	display: flex;
+	gap: 10px;
+}
+
+.footer-social-list{
+	margin-top: 12px;
+}
+
+.footer-social-link{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	background-color:rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+}
+
+.footer-social-link:hover{
+	background-color: var(--action-color);
+}
+
 
 /* portfolio */
 
