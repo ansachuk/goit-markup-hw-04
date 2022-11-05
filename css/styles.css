@@ -404,7 +404,10 @@ img {
 
 
 .clients-link {
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: 170px;
 	height: 92px;
 
@@ -414,8 +417,7 @@ img {
 }
 
 .clients-icon {
-	fill: currentColor;
-	margin: 16px 32px;
+	fill: #AFB1B8;
 }
 
 .clients-link:hover,
@@ -431,10 +433,6 @@ img {
 	fill: var(--action-color);
 }
 
-.footer-icons{
-	margin: 12px;
-	fill: var(--header-color);
-}
 
 /* ________________Футер______________ */
 
@@ -446,6 +444,7 @@ img {
 .footer>.container{
 	display: flex;
 	gap: 70px;
+	align-items: baseline;
 }
 
 .footer a {
@@ -498,19 +497,23 @@ img {
 	gap: 10px;
 }
 
-.footer-social-list{
-	margin-top: 12px;
+.footer-icons {
+	fill: var(--header-color);
 }
 
+
 .footer-social-link{
-	display: inline-block;
+	display:flex ;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
 	background-color:rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 }
 
-.footer-social-link:hover{
+.footer-social-link:hover,
+.footer-social-link:focus{
 	background-color: var(--action-color);
 }
 
