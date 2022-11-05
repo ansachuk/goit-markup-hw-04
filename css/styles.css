@@ -43,7 +43,7 @@ p {
 }
 
 a{
-
+	text-decoration: none;
 }
 .link {
 	text-decoration: none;
@@ -194,10 +194,11 @@ img {
 	height: 600px;
 	margin-right: auto;
 	margin-left: auto;
-	background-position: cover;
+	background-size: cover;
 	background-color: #C4C4C4;
 	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/homepage/hero/hero.jpg);
 	background-repeat: no-repeat;
+	background-position: center;
 }
 
 
@@ -279,15 +280,14 @@ img {
 }
 
 .advences-item {
-	width: 270px;
 	height: 120px;
 	background: #F5F4FA;
 	border-radius: 4px;
 	margin-bottom: 30px;
-}
 
-.advences-item-icon {
-	margin: 25px 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* ---------------- our team -------------- */
@@ -363,18 +363,23 @@ img {
 	width: 44px;
 	height: 44px;
 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 }
 
-.team-link:hover {
+.team-link:hover,
+.team-link:focus {
 	background-color: var(--action-color);
 }
 
 .team-icon {
-	fill: currentColor;
-	margin: 12px;
+	fill: #AFB1B8;
 }
 
-.team-link:hover .team-icon {
+.team-link:hover .team-icon,
+.team-link:focus .team-icon{
 	fill: var(--header-color);
 }
 
